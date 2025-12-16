@@ -1,0 +1,21 @@
+<svg width="420" height="80" viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E6F9FF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00D4FF"/>
+    </filter>
+  </defs>
+
+  <!-- Bitcoin Icon -->
+  <text x="10" y="55" font-size="48" font-family="Arial Black" fill="#00D4FF" filter="url(#glow)">
+    ₿
+  </text>
+
+  <!-- Logo Text -->
+  <text x="60" y="55" font-size="36" font-family="Orbitron, sans-serif" fill="url(#textGradient)">
+    CRYPTOMANIAC
+  </text>
+</svg>

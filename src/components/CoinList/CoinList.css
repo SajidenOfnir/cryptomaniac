@@ -1,0 +1,356 @@
+.coin-list-container {
+  background: rgba(26, 31, 46, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.list-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--light), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.list-title svg {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(240, 248, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.stat-item strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+  background: rgba(10, 14, 23, 0.5);
+}
+
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.coin-table thead {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.coin-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--light);
+  font-family: 'Exo 2', sans-serif;
+  border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+}
+
+.sortable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.sortable:hover {
+  color: var(--primary);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.sort-indicator {
+  margin-left: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.coin-row {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.coin-row:hover {
+  background: rgba(0, 212, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.coin-table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  color: rgba(240, 248, 255, 0.3);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.favorite-btn:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+}
+
+.favorite-btn.active {
+  color: var(--primary);
+  fill: var(--primary);
+}
+
+.rank-badge {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+.coin-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.coin-link:hover {
+  color: var(--primary);
+}
+
+.coin-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 212, 255, 0.3);
+}
+
+.coin-name-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-name {
+  font-weight: 600;
+  color: var(--light);
+}
+
+.coin-symbol {
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+}
+
+.price-value {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--light);
+}
+
+.change-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.change-badge.positive {
+  background: rgba(0, 255, 136, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.change-badge.negative {
+  background: rgba(255, 71, 87, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(255, 71, 87, 0.2);
+}
+
+.market-cap-value {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+  color: rgba(240, 248, 255, 0.9);
+}
+
+.details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+  background: rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+}
+
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.last-updated {
+  color: rgba(240, 248, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--light);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  color: rgba(240, 248, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 4rem;
+  background: rgba(26, 31, 46, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.loader {
+  border: 4px solid rgba(0, 212, 255, 0.1);
+  border-top: 4px solid var(--primary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.retry-btn {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coin-list-container {
+    padding: 1rem;
+  }
+  
+  .list-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .stat-item {
+    justify-content: space-between;
+  }
+  
+  .list-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
