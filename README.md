@@ -233,4 +233,4 @@ Project Link: [https://github.com/SajidenOfnir/cryptomaniac](https://github.com/
   
   If you found this project helpful, please give it a ⭐!
 </div>
-```
+
