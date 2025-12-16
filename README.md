@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./screenshots/logo.svg" alt="Cryptomaniac Logo" width="200"/>
   
-  # 🚀 Cryptomaniac
+  # Cryptomaniac
   
   ### Futuristic Cryptocurrency Price Tracker
   
